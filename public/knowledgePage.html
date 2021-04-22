@@ -244,17 +244,21 @@
 				var topnavPos = document.getElementById("topnav").getBoundingClientRect();
 				var topnav = document.getElementById("topnav");
 				window.onscroll = function(){
+					// 當menu bar會蓋到navigation bar時
 					if(headerPos.bottom + window.pageYOffset >= topnavPos.top){
 						topnav.style.position = "fixed";
+						// 為了讓navigation bar置中
 						topnav.style.left = "50%";
 						var pullback = -topnav.clientWidth/2;
-						console.log("pullback = " + pullback);
 						topnav.style.marginLeft = pullback.toString()+"px";
-						topnav.style.marginTop = "-12.5%";
+						var topP = (-12.5/document.body.clientWidth*1519).toString() + "%";
+						topnav.style.marginTop = topP;
+						console.log(topP)
 					}else{
 						topnav.style.position = "inherit";
 						topnav.style.margin = "0 auto";
 						topnav.style.marginTop = "2.5%";
+						console.log(topP);
 					}
 				}
 			</script>
