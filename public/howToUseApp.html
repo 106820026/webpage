@@ -39,29 +39,142 @@
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>APP教學(IOS版、Android版)</h1>
+				<h1>期貨APP下單教學</h1>
 			</div>
 
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<div class="content">
-						<table class="nocolor">
-							<tr><h2>開啟APP後的公告畫面 -> 點選「關閉」</h2></tr>
-							<tr>
-								<td><div class="image fit"><img src="./images/tutorial1.jpg"></div></td>
-								<td>&nbsp;</td>
-								<td><div class="image fit"><img src="./images/tutorial1.jpg"></div></td>
-							</tr>
-						</table>
-						<table class="nocolor">
-							<tr><h2>登入帳號密碼</h2></tr>
-							<tr>
-								<td><div class="image fit"><img src="./images/tutorial2.jpg"></div></td>
-								<td>&nbsp;</td>
-								<td><div class="image fit"><img src="./images/tutorial2.jpg"></div></td>
-							</tr>
-						</table>
+						<!-- <header>
+							<h2>一、下單介面介紹 –「交易」</h2>
+						</header>
+						<p>分為<b>整股交易、盤後交易、零股交易</b>：</p>
+						<img src="./images/howToUse1.png" style="width: 40%;"/>
+						<p>
+							<span style="font-size: x-large;">1、整股交易</span><br/>
+							在台股盤中的時間，也就是開盤到收盤9:00-13:30之間。最小的交易單位是1張，也就是1000股。<br/>
+							<span style="font-size: x-large;">2、盤後交易</span><br/>
+							盤後的時間則是14:00-14:30。最小的交易單位也是1張。比較特殊的是，它的價格只能選收盤的成交價。14:30時會進行撮合交易。
+							假設今天收盤成交在100元，那就只能以100元去買進或賣出。
+						</p>
+						<img src="./images/howToUse2.png" style="width: 40%;"/>
+						<p>
+							<span style="font-size: x-large;">3、零股交易</span><br/>
+							零股交易的時間，目前是13:40-14:30。但在109/10/24後會改成也可以在盤中( 9:00-13:30 )可以零股交易。
+							<span style="color: red;">(盤後零股交易也還存在)</span><br/>
+							最小交易的單位是1股，可以選1-999股。在盤中你最少必須買1張，也就是1000股。<br/>
+							假設你想買100元的股票。在盤中你至少要買1張，也就必須花10萬元。但在零股交易，你可以只買1股就好，也就是只花100元。<br/>
+							零股交易的價格必須用限定價格去買或賣。14:30時會進行撮合交易。比如我可以設定用101元去買進；或是設定漲停賣出等等。
+						</p>
+						<img src="./images/howToUse3.png" style="width: 40%;"/>
+						<header>
+							<h2>二、下單介面介紹 –「種類」</h2>
+						</header>
+						<p>種類分為<b>現股、融資、融券</b>。他們最大的差別就是你須付出多少的本金。</p>
+						<img src="./images/howToUse4.png" style="width: 40%;"/>
+						<p>
+							<span style="font-size: x-large;">1、現股</span><br/>
+							現股就是付出100%的本金。如果用現股買一張100元的股票。本金就是100 x 1000 = 10萬。<br/>
+							<span style="font-size: x-large;">2、融資</span><br/>
+							<b>使用時機</b><br/>
+							你判斷<b>股票會上漲</b>，你想買股票<b>做多</b>，但是<b>資金不夠</b>時，可以用融資買進股票。( 融資期限通常為<b>半年</b>，可向券商申請延長到<b>1.5</b>年 )<br/>
+						</p>
+						<img src="./images/howToUse4-1.png" style="width: 80%; display:block; margin: auto;"/>
+						<p>
+							<b>融資比例</b><br/>
+							券商會借你錢，大部分都是<b>券商</b>會幫你付<b>6成</b>，你只需要準備<b>4成</b>就好。但有時候可能會因為一些因素，比如：股價波動過大、成交量異常…，
+							導致股票能融資的比例可能不同。<br/>
+							你可以點選「融資」後，從這邊觀看，確定融資比例是多少。
+						</p>
+						<img src="./images/howToUse5.png" style="width: 40%;"/>
+						<p>
+							或是去證交所查詢：<a href="https://www.twse.com.tw/zh/exchange/BFIB9U">證交所-調整成數</a><br/>
+							所以假設你用融資買進一張100元的股票。大部分你只需付4萬 。券商會幫你付6萬。接著等待股票上漲，在賣出之後，還券商<b>6萬</b>及<b>利息</b> 
+							(大多券商年利息<b>5~7%</b> )就好。<br/><br/>
+							<b>融資維持率</b><br/>
+							如果<b>走勢跟你預期不同</b>，一路下跌，一路虧。虧損金額導致<b>融資維持率</b> ( <b>股票現值</b> ÷ <b>券商幫你融資的金額</b> )低於
+							<b>130%</b>時，券商就會叫你<b>補繳金額</b>。<br/>
+							經過複雜的計算，( 股票現值=130% x 券商融資金額 )我們算出：當現在<b>股價跌到當初股價的0.78倍</b>時，就會<b>低於融資維持率了</b>。<br/>
+							比如當初買100元，130% x 100 (股價) x 1000 (1張) x 60% (融資比例) = 78000所以當股價跌到78元時，就要補錢。<br/>
+							如果你又<b>付不出</b>該補繳的金額時，券商就會把你融資的股票立刻賣掉，並請你補上價差。
+						</p>
+						<img src="./images/howToUse5-1.gif" style="width: 80%; display:block; margin: 10px auto;"/>
+						<p>
+							<b>融資的風險</b><br/>
+							融資雖然可以讓你<b>用較少本金操作股票</b>，因此他的槓桿較高，只要付4成就可以操作本金。<br/>
+							<b>2.5倍</b>的槓桿比，造成獲利比例更高。但他的<b>獲利多高</b>，<b>風險就多高</b>。所以在使用融資操作時，建議你謹慎使用。<br/>
+							<span style="font-size: x-large;">3、融券</span><br/>
+							<b>使用時機</b><br/>
+							你判斷<b>股票會下跌</b>，你想<b>做空</b>股票時，可以用融券，<b>跟券商借股票</b>來<b>先賣</b>掉股票。
+							( 融券期限通常為<b>半年</b>，可向券商申請延長到<b>1.5年</b> )
+						</p>
+						<img src="./images/howToUse5-2.png" style="width: 80%; display:block; margin: 10px auto;"/>
+						<p>
+							融券需要<b>付9成的保證金</b>，所以一張100元的股票你必須付<b>9萬元</b>。接下來，就等待股票下跌後<b>買回一張股票還給券商</b>，
+							並給<b>利息</b>(大多券商<b>年利息0.1~0.3% </b>)就好。<br/>
+							<b>融券維持率</b><br/>
+							同樣，如果你看錯方向，股價持續上漲，使融券維持率 ( (放空賣出時的價值 + 9成保證金) ÷ <b>股票現值</b> )<b>低於130%</b>時，
+							就會被<b>催繳金額</b>。<br/>
+							經過複雜的計算之後，( 股票現值=(放空價 + 保證金) ÷ 130% )就是當初價格約<b>1.46倍</b>時，被催繳。<br/>
+							如果<b>不補繳</b>的話就會以<b>現價</b>，幫你從市場上買回這張股票，並請你<b>補上差額</b>。<br/>
+							所以假設你融券賣了100元的股票。當它漲到146元以上時，就會要你補繳。
+						</p>
+						<img src="./images/howToUse5-3.gif" style="width: 80%; display:block; margin: 10px auto;"/>
+						<p>
+							<b>融券一定要記得的事</b><br/>
+							如果你融券了某家公司的股票，一定要注意這家公司的<b>除權息</b>跟<b>股東會</b>的時間。
+						</p>
+						<p style="display:block; text-align:center; font-size: x-large; color: red; font-weight: bold;"><i>一定要在那之前把股票還給券商。</i></p>
+						<p>
+							不然券商會<b>強制你買回這張股票</b>，還給他們。<br/>除權息和股東會的時間可以在這裡查詢：
+							<a target="_blank" href="https://goodinfo.tw/StockInfo/StockHolderMeetingList.asp?MARKET_CAT=%E5%85%A8%E9%83%A8&INDUSTRY_CAT=%E5%85%A8%E9%83%A8&YEAR=%E8%BF%91%E6%9C%9F%E5%8F%AC%E9%96%8B">Goodinfo-查詢除權息和股東會日期</a>
+							<span style="font-size: x-large;">4、融券融資的必備條件—開信用戶</span><br/>
+							當然不是隨隨便便就能讓你融資、融券的。你一定要先<b>滿足以下條件</b>去開股票<b>信用戶</b>，才能融資融券：
+						</p>
+						<img src="./images/howToUse5-4.png" style="width: 30%; display:block; margin: 10px auto;"/>
+						<p>
+							當然也要確定這檔股票的融資融券餘額是否還夠。如果不夠，那券商就沒辦法借你錢或是股票，不能做融資融券了。
+							你可以去證交所查詢股票的融資融券餘額：
+							<a target="_blank" href="https://www.twse.com.tw/zh/page/trading/exchange/MI_MARGN.html">證交所-融資融券餘額</a>
+							也可以直接從下單軟體的這裡看：
+						</p>
+						<img src="./images/howToUse6.png" width="40%"/>
+						<p>
+							<b>不能融資融券的股票</b>
+							一般的股票只要你有開信用戶，融資融券餘額還夠都可以用融資融券。但如果你今天選到的是<b>警示股</b>，比如近期<b>累計漲跌幅超過25%</b>的股票。
+							它除了<b>不能融資融券</b>外，也<b>不能當沖</b>。<br/>
+							你如果真的想買警示股就必須全額交割。必須<b>先付全部的交割金</b>給券商<b>再下單</b>，不能等到T+2。用意是提醒投資人：想清楚再下單 。
+							如果想查當天的警示股有哪些，可以從證交所查到：
+							<a target="_blank" href="https://www.twse.com.tw/zh/page/announcement/notice.html">證交所-警示股查詢</a><br/>
+							在你下單時也會跳出警告視窗，提醒你這隻是警示股：
+						</p>
+						<img src="./images/howToUse7.png" width="40%"/>
+						<header>
+							<h2>三、下單到底該設哪些選項？</h2>
+						</header>
+						<p>
+							<span style="font-size: x-large;">1、非當沖</span><br/>
+							<b>做多</b><br/>
+							現股：<b>現股買→現股賣</b>。 融資券：<b>融資買→融券賣</b>。融資融券一定要記得：<br/>
+							<b>做空</b><br/>
+							那如果是預期股票會下跌，要賣高買低去做空的話。可以<b>融券賣→融券買</b>。
+						</p>
+						<img src="./images/howToUse7-1.png" style="width: 80%; display:block; margin: 10px auto;"/>
+						<span style="font-size: x-large;">2、當沖</span><br/>
+						<p>
+							<span style="font-size: x-large;">1、非當沖</span><br/>
+							<b>做多</b><br/>
+							假設你<b>預期股票會上漲，</b>要<b>買低賣高</b>去做多。你可以選擇，<b>現股買→現股賣</b>。如果資金不夠的話，可以用<b>融資買→融資賣</b>。
+						</p>
+						<p style="display:block; text-align:center; font-size: x-large; color: red; font-weight: bold;"><i>當沖買用融資，賣用融券。</i></p>
+						<p>
+							<b>做空</b><br/>
+							那如果是預期股票會下跌，要賣高買低去做空的話。可以<b>融券賣→融券買</b>。
+						</p>
+						<img src="./images/howToUse7-2.png" style="width: 80%; display:block; margin: 10px auto;"/>
+						<p>有的下單軟體會有<b>現沖</b>的選項：</p>
+						<img src="./images/howToUse8.png" width="40%"/> -->
 					</div>
 				</div>
 				<button id="backToTopBtn" onclick="topFunction()">Top</button>

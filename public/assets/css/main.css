@@ -2898,6 +2898,11 @@ body.is-menu-visible #menu {
   margin-top: 2.5%;
   display: flex; 
 }
+@media screen and (max-width: 480px){
+  .topnav{
+    width: 80%;
+  }
+}
 
 .topnav a {
   float: left;
@@ -2918,6 +2923,15 @@ body.is-menu-visible #menu {
   background-color: #4CAF50;
   color: white;
 }
+
+@media screen and (max-width: 980px) {
+  .topnav a{
+    font-size: small;
+  }}
+@media screen and (max-width: 480px) {
+  .topnav a{
+    font-size: smaller;
+  }}
 
 /* Flex */
 
@@ -3072,3 +3086,13 @@ body.is-menu-visible #menu {
       }
 
   }
+
+/*Text Animation*/
+.animationText{
+  animation: color-change 1s infinite;
+}
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: olivedrab; }
+}

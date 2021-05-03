@@ -45,7 +45,7 @@
 		<!-- Menubar -->
 			<div id="topnav" class="topnav">
 				<a class="active" href="#newbie" style="width: 33.33%;" onclick="isActive(0)">期貨入門</a>
-				<a href="#abroaad" style="width: 33.33%;" onclick="isActive(1)">國外期貨</a>
+				<a href="#abroad" style="width: 33.33%;" onclick="isActive(1)">國外期貨</a>
 				<a href="#domestic" style="width: 33.33%;" onclick="isActive(2)">國內期貨</a>
 			</div>
 		<!-- Main -->
@@ -107,8 +107,17 @@
                             <p>美股四巫日風暴再臨?!<br/>讓我們為您解答四巫日是什麼</p>
                         </div>
                     </section>
+					<section>
+                        <div class="content">
+                            <header>
+                                <i class="icon fas fa-calendar-day"><span class="label">Icon</span></i>
+                                <a href="day-tradingSkill.html"><h3>期貨當沖技巧有哪些</h3></a>
+                            </header>
+                            <p>你不能不注意的3個重點</p>
+                        </div>
+                    </section>
 				</div>
-				<h2 id="abroaad" style="text-align: center;">國外期貨</h2>
+				<h2 id="abroad" style="text-align: center;">國外期貨</h2>
 				<div class="highlights">
                     <section>
                         <div class="content">
@@ -128,6 +137,24 @@
                             <p>英鎊期貨合約規格詳細介紹</p>
                         </div>
                     </section>
+					<section>
+                        <div class="content">
+                            <header>
+                                <i class="icon fas fa-dollar-sign"><span class="label">Icon</span></i>
+                                <a href="tradeDax.html"><h3>如何買賣小德國指數期貨</h3></a>
+                            </header>
+                            <p>國指數期貨實戰最速上手</p>
+                        </div>
+                    </section>
+					<section>
+                        <div class="content">
+                            <header>
+                                <i class="icon fas fa-chart-line"><span class="label">Icon</span></i>
+                                <a href="tradeDax.html"><h3>小道瓊是什麼?</h3></a>
+                            </header>
+                            <p>教您如何買賣小道瓊期貨</p>
+                        </div>
+                    </section>
 				</div>
 				<h2 id="domestic" style="text-align: center;">國內期貨</h2>
 				<div class="highlights">
@@ -144,7 +171,7 @@
                         <div class="content">
                             <header>
                                 <i class="icon fas fa-pizza-slice"><span class="label">Icon</span></i>
-                                <a href="day-tradingSkill.html"><h3>台指期當沖技巧</h3></a>
+                                <a href="TXDay-tradingSkill.html"><h3>台指期當沖技巧</h3></a>
                             </header>
                             <p>圖解進出場給你看</p>
                         </div>
@@ -243,9 +270,14 @@
 				var headerPos = document.getElementById("header").getBoundingClientRect();
 				var topnavPos = document.getElementById("topnav").getBoundingClientRect();
 				var topnav = document.getElementById("topnav");
+				var newbie = document.getElementById("newbie").getBoundingClientRect();
+				var abroad = document.getElementById("abroad").getBoundingClientRect();
+				var domestic = document.getElementById("domestic").getBoundingClientRect();
+				
 				window.onscroll = function(){
+					// 讓navigation bar跟著動
 					// 當menu bar會蓋到navigation bar時
-					if(headerPos.bottom + window.pageYOffset >= topnavPos.top){
+					if(headerPos.bottom + window.pageYOffset >= topnavPos.top-10){
 						topnav.style.position = "fixed";
 						// 為了讓navigation bar置中
 						topnav.style.left = "50%";
@@ -259,6 +291,14 @@
 						topnav.style.margin = "0 auto";
 						topnav.style.marginTop = "2.5%";
 						console.log(topP);
+					}
+					// 讓navigation bar切換頁
+					if(window.pageYOffset < abroad.top-150){
+						isActive(0);
+					}else if(window.pageYOffset < domestic.top-100){
+						isActive(1);
+					}else{
+						isActive(2);
 					}
 				}
 			</script>
