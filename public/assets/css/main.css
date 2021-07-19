@@ -189,6 +189,12 @@ table {
 @media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px) {
     table {
+        /* display: block; */
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .rwd-table td {
         display: block;
     }
 }
@@ -250,7 +256,8 @@ body,
 input,
 select,
 textarea {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: /*"Raleway",*/
+    Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.65;
@@ -2772,6 +2779,10 @@ ul.icons li .icon:before {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.open-account {
+    width: 100%;
 }
 
 @media screen and (max-width:768px) {
