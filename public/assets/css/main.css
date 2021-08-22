@@ -2834,7 +2834,7 @@ img {
     -ms-flex-align: center;
     -ms-flex-pack: center;
     background-color: #111111;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
@@ -2847,14 +2847,14 @@ img {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-image: url("../../images/banner.jpg");
+    background-image: url("../../images/banner1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 0;
     display: -ms-flexbox;
-    height: 35rem !important;
-    min-height: 35rem;
+    height: 13rem !important;
+    min-height: 13rem;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -3090,7 +3090,7 @@ img {
 }
 
 #banner h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -3122,7 +3122,8 @@ img {
     width: auto;
 }
 
-#banner:before {
+
+/* #banner:before {
     -moz-transition: opacity 3s ease;
     -webkit-transition: opacity 3s ease;
     -ms-transition: opacity 3s ease;
@@ -3155,7 +3156,7 @@ img {
     webkit-linear-gradientidth: 100%;
     width: 100%;
     z-index: 1;
-}
+} */
 
 #banner.small {
     height: 30vh !important;
@@ -3215,10 +3216,10 @@ body.is-preload #banner:before {
 /* CTA */
 
 #cta {
-    background-color: #ce1b28;
+    /* background-color: #ce1b28; */
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
+    background-image: url(../../images/cta.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3890,7 +3891,7 @@ body:before {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg");
+    background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4114,7 +4115,8 @@ body:before {
     color: #ce1b28;
 }
 
-#heading:before {
+
+/* #heading:before {
     background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
     content: ' ';
     display: block;
@@ -4125,7 +4127,7 @@ body:before {
     top: 0;
     width: 100%;
     z-index: 1;
-}
+} */
 
 #heading h1 {
     margin-bottom: 0;
