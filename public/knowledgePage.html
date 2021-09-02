@@ -363,21 +363,21 @@
         window.onscroll = function() {
             // 讓navigation bar跟著動
             // 當menu bar會蓋到navigation bar時
-            if (headerPos.bottom + window.pageYOffset >= topnavPos.top - 10) {
-                topnav.style.position = "fixed";
-                // 為了讓navigation bar置中
-                topnav.style.left = "50%";
-                var pullback = -topnav.clientWidth / 2;
-                topnav.style.marginLeft = pullback.toString() + "px";
-                var topP = (-12.5 / document.body.clientWidth * 1519).toString() + "%";
-                topnav.style.marginTop = topP;
-                console.log(topP)
-            } else {
-                topnav.style.position = "inherit";
-                topnav.style.margin = "0 auto";
-                topnav.style.marginTop = "2.5%";
-                console.log(topP);
-            }
+            // if (headerPos.bottom + window.pageYOffset >= topnavPos.top - 10) {
+            //     topnav.style.position = "fixed";
+            //     // 為了讓navigation bar置中
+            //     topnav.style.left = "50%";
+            //     var pullback = -topnav.clientWidth / 2;
+            //     topnav.style.marginLeft = pullback.toString() + "px";
+            //     var topP = (-12.5 / document.body.clientWidth * 1519).toString() + "%";
+            //     topnav.style.marginTop = topP;
+            //     console.log(topP)
+            // } else {
+            //     topnav.style.position = "inherit";
+            //     topnav.style.margin = "0 auto";
+            //     topnav.style.marginTop = "2.5%";
+            //     console.log(topP);
+            // }
             // 讓navigation bar切換頁
             if (window.pageYOffset < abroad.top - 150) {
                 isActive(0);
